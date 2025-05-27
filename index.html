@@ -19,6 +19,154 @@
     <div class="container">
         <h2 class="section-title">Проекты</h2>
         <div class="cards-container">
+            <!-- Herzen Книги -->
+            <div class="card-wrapper" onclick="openModal('herzen-books')">
+                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-herzen-books')">i</button>
+                <div class="card">
+                    <h3>Herzen Книги</h3>
+                    <p class="card-content">Книжный магазин</p>
+                    <img src="screenshot-script/public/herzen-books.png" data-gif="screenshot-script/public/herzen-books.gif" alt="Herzen Books Screenshot" class="card-screenshot">
+                    <div class="btn-container">
+                        <a href="https://www.itvd.online/herzenbooks/" class="btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div id="tech-herzen-books" class="tech-info-content">
+                    <h3>Техническая информация</h3>
+                    <p><strong>Стек:</strong></p>
+                    <ul>
+                        <li>backend: Node.js, MongoDB</li>
+                        <li>frontend: Next.js</li>
+                    </ul>
+                    <p><strong>GitHub:</strong></p>
+                    <ul>
+                        <li><a href="https://github.com/user/herzen-books" target="_blank">Основной репозиторий</a></li>
+                    </ul>
+                    <p><strong>Команда:</strong></p>
+                    <ul>
+                        <li>Павел Смирнов, fullstack</li>
+                        <li>Алина Кузнецова, дизайн</li>
+                    </ul>
+                    <p><strong>Особенности:</strong></p>
+                    <ul>
+                        <li>Система корзины и оформления заказа</li>
+                        <li>Интеграция с платежной системой</li>
+                    </ul>
+                    <button onclick="hideTechInfo('tech-herzen-books')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
+                </div>
+            </div>
+
+            <!-- Открытый кампус -->
+            <div class="card-wrapper" onclick="openModal('open-campus')">
+                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-open-campus')">i</button>
+                <div class="card">
+                    <h3>Открытый кампус</h3>
+                    <p class="card-content">Открытый кампус РГПУ им. А. И. Герцена — это пространство в исторических зданиях Герценовского университета, где проходят образовательные и научные мероприятия.</p>
+                    <img src="screenshot-script/public/open-campus.png" data-gif="screenshot-script/public/open-campus.gif" alt="Open Campus Screenshot" class="card-screenshot">
+                    <div class="btn-container">
+                        <a href="https://itvd.online/open-campus/" class="btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div id="tech-open-campus" class="tech-info-content">
+                    <h3>Техническая информация</h3>
+                    <p><strong>Стек:</strong></p>
+                    <ul>
+                        <li>backend: PHP, Laravel</li>
+                        <li>frontend: Vue.js</li>
+                    </ul>
+                    <p><strong>GitHub:</strong></p>
+                    <ul>
+                        <li><a href="https://github.com/user/open-campus" target="_blank">Основной репозиторий</a></li>
+                    </ul>
+                    <p><strong>Команда:</strong></p>
+                    <ul>
+                        <li>Денис Федоров, backend</li>
+                        <li>Светлана Иванова, frontend</li>
+                    </ul>
+                    <p><strong>Особенности:</strong></p>
+                    <ul>
+                        <li>Календарь мероприятий</li>
+                        <li>Система бронирования мест</li>
+                    </ul>
+                    <button onclick="hideTechInfo('tech-open-campus')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
+                </div>
+            </div>
+
+            <!-- 3d карта -->
+            <div class="card-wrapper" onclick="openModal('herzen-map')">
+                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-herzen-map')">i</button>
+                <div class="card">
+                    <h3>3d карта</h3>
+                    <p class="card-content">Всё для студентов РГПУ в одном месте: 3D-карта кампуса, расписание с навигацией, актуальные новости и личный кабинет.</p>
+                    <img src="screenshot-script/public/herzen-map.png" data-gif="screenshot-script/public/herzen-map.gif" alt="Herzen Map Screenshot" class="card-screenshot">
+                    <div class="btn-container">
+                        <a href="https://itvd.online/herzen-map/" class="btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div id="tech-herzen-map" class="tech-info-content">
+                    <h3>Техническая информация</h3>
+                    <p><strong>Стек:</strong></p>
+                    <ul>
+                        <li>backend: ASP.NET Core</li>
+                        <li>frontend: Three.js, React</li>
+                    </ul>
+                    <p><strong>GitHub:</strong></p>
+                    <ul>
+                        <li><a href="https://github.com/user/herzen-map" target="_blank">Основной репозиторий</a></li>
+                    </ul>
+                    <p><strong>Команда:</strong></p>
+                    <ul>
+                        <li>Андрей Павлов, 3D-графика</li>
+                        <li>Виктория Семенова, разработка</li>
+                    </ul>
+                    <p><strong>Особенности:</strong></p>
+                    <ul>
+                        <li>Интерактивная 3D-карта</li>
+                        <li>Интеграция с расписанием</li>
+                    </ul>
+                    <button onclick="hideTechInfo('tech-herzen-map')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
+                </div>
+            </div>
+
+            <!-- Грибы -->
+            <div class="card-wrapper" onclick="openModal('mushroom-hunter')">
+                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-mushroom-hunter')">i</button>
+                <div class="card">
+                    <h3>Грибы</h3>
+                    <p class="card-content">3D игра от первого лица, где можно собирать и изучать грибы.</p>
+                    <img src="screenshot-script/public/mushroom-hunter.png" data-gif="screenshot-script/public/mushroom-hunter.gif" alt="Mushroom Hunter Screenshot" class="card-screenshot">
+                    <div class="btn-container">
+                        <a href="https://itvd.online/mushroom-hunter/" class="btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div id="tech-mushroom-hunter" class="tech-info-content">
+                    <h3>Техническая информация</h3>
+                    <p><strong>Стек:</strong></p>
+                    <ul>
+                        <li>Игровой движок: Unity</li>
+                        <li>Язык программирования: C#</li>
+                    </ul>
+                    <p><strong>GitHub:</strong></p>
+                    <ul>
+                        <li><a href="https://github.com/user/mushroom-hunter" target="_blank">Основной репозиторий</a></li>
+                    </ul>
+                    <p><strong>Команда:</strong></p>
+                    <ul>
+                        <li>Михаил Орлов, геймдизайн</li>
+                        <li>Анна Власова, 3D-модели</li>
+                    </ul>
+                    <p><strong>Особенности:</strong></p>
+                    <ul>
+                        <li>Реалистичная физика сбора грибов</li>
+                        <li>Энциклопедия грибов в игре</li>
+                    </ul>
+                    <button onclick="hideTechInfo('tech-mushroom-hunter')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
+                </div>
+            </div>
+            
             <!-- Herzen Tutor -->
             <div class="card-wrapper" onclick="openModal('herzen-tutor')">
                 <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-herzen-tutor')">i</button>
@@ -320,154 +468,6 @@
                         <li>Поиск по контенту</li>
                     </ul>
                     <button onclick="hideTechInfo('tech-wiki-guide')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
-                </div>
-            </div>
-
-            <!-- Herzen Книги -->
-            <div class="card-wrapper" onclick="openModal('herzen-books')">
-                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-herzen-books')">i</button>
-                <div class="card">
-                    <h3>Herzen Книги</h3>
-                    <p class="card-content">Книжный магазин</p>
-                    <img src="screenshot-script/public/herzen-books.png" data-gif="screenshot-script/public/herzen-books.gif" alt="Herzen Books Screenshot" class="card-screenshot">
-                    <div class="btn-container">
-                        <a href="https://www.itvd.online/herzenbooks/" class="btn">Перейти</a>
-                    </div>
-                </div>
-                
-                <div id="tech-herzen-books" class="tech-info-content">
-                    <h3>Техническая информация</h3>
-                    <p><strong>Стек:</strong></p>
-                    <ul>
-                        <li>backend: Node.js, MongoDB</li>
-                        <li>frontend: Next.js</li>
-                    </ul>
-                    <p><strong>GitHub:</strong></p>
-                    <ul>
-                        <li><a href="https://github.com/user/herzen-books" target="_blank">Основной репозиторий</a></li>
-                    </ul>
-                    <p><strong>Команда:</strong></p>
-                    <ul>
-                        <li>Павел Смирнов, fullstack</li>
-                        <li>Алина Кузнецова, дизайн</li>
-                    </ul>
-                    <p><strong>Особенности:</strong></p>
-                    <ul>
-                        <li>Система корзины и оформления заказа</li>
-                        <li>Интеграция с платежной системой</li>
-                    </ul>
-                    <button onclick="hideTechInfo('tech-herzen-books')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
-                </div>
-            </div>
-
-            <!-- Открытый кампус -->
-            <div class="card-wrapper" onclick="openModal('open-campus')">
-                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-open-campus')">i</button>
-                <div class="card">
-                    <h3>Открытый кампус</h3>
-                    <p class="card-content">Открытый кампус РГПУ им. А. И. Герцена — это пространство в исторических зданиях Герценовского университета, где проходят образовательные и научные мероприятия.</p>
-                    <img src="screenshot-script/public/open-campus.png" data-gif="screenshot-script/public/open-campus.gif" alt="Open Campus Screenshot" class="card-screenshot">
-                    <div class="btn-container">
-                        <a href="https://itvd.online/open-campus/" class="btn">Перейти</a>
-                    </div>
-                </div>
-                
-                <div id="tech-open-campus" class="tech-info-content">
-                    <h3>Техническая информация</h3>
-                    <p><strong>Стек:</strong></p>
-                    <ul>
-                        <li>backend: PHP, Laravel</li>
-                        <li>frontend: Vue.js</li>
-                    </ul>
-                    <p><strong>GitHub:</strong></p>
-                    <ul>
-                        <li><a href="https://github.com/user/open-campus" target="_blank">Основной репозиторий</a></li>
-                    </ul>
-                    <p><strong>Команда:</strong></p>
-                    <ul>
-                        <li>Денис Федоров, backend</li>
-                        <li>Светлана Иванова, frontend</li>
-                    </ul>
-                    <p><strong>Особенности:</strong></p>
-                    <ul>
-                        <li>Календарь мероприятий</li>
-                        <li>Система бронирования мест</li>
-                    </ul>
-                    <button onclick="hideTechInfo('tech-open-campus')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
-                </div>
-            </div>
-
-            <!-- 3d карта -->
-            <div class="card-wrapper" onclick="openModal('herzen-map')">
-                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-herzen-map')">i</button>
-                <div class="card">
-                    <h3>3d карта</h3>
-                    <p class="card-content">Всё для студентов РГПУ в одном месте: 3D-карта кампуса, расписание с навигацией, актуальные новости и личный кабинет.</p>
-                    <img src="screenshot-script/public/herzen-map.png" data-gif="screenshot-script/public/herzen-map.gif" alt="Herzen Map Screenshot" class="card-screenshot">
-                    <div class="btn-container">
-                        <a href="https://itvd.online/herzen-map/" class="btn">Перейти</a>
-                    </div>
-                </div>
-                
-                <div id="tech-herzen-map" class="tech-info-content">
-                    <h3>Техническая информация</h3>
-                    <p><strong>Стек:</strong></p>
-                    <ul>
-                        <li>backend: ASP.NET Core</li>
-                        <li>frontend: Three.js, React</li>
-                    </ul>
-                    <p><strong>GitHub:</strong></p>
-                    <ul>
-                        <li><a href="https://github.com/user/herzen-map" target="_blank">Основной репозиторий</a></li>
-                    </ul>
-                    <p><strong>Команда:</strong></p>
-                    <ul>
-                        <li>Андрей Павлов, 3D-графика</li>
-                        <li>Виктория Семенова, разработка</li>
-                    </ul>
-                    <p><strong>Особенности:</strong></p>
-                    <ul>
-                        <li>Интерактивная 3D-карта</li>
-                        <li>Интеграция с расписанием</li>
-                    </ul>
-                    <button onclick="hideTechInfo('tech-herzen-map')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
-                </div>
-            </div>
-
-            <!-- Грибы -->
-            <div class="card-wrapper" onclick="openModal('mushroom-hunter')">
-                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-mushroom-hunter')">i</button>
-                <div class="card">
-                    <h3>Грибы</h3>
-                    <p class="card-content">3D игра от первого лица, где можно собирать и изучать грибы.</p>
-                    <img src="screenshot-script/public/mushroom-hunter.png" data-gif="screenshot-script/public/mushroom-hunter.gif" alt="Mushroom Hunter Screenshot" class="card-screenshot">
-                    <div class="btn-container">
-                        <a href="https://itvd.online/mushroom-hunter/" class="btn">Перейти</a>
-                    </div>
-                </div>
-                
-                <div id="tech-mushroom-hunter" class="tech-info-content">
-                    <h3>Техническая информация</h3>
-                    <p><strong>Стек:</strong></p>
-                    <ul>
-                        <li>Игровой движок: Unity</li>
-                        <li>Язык программирования: C#</li>
-                    </ul>
-                    <p><strong>GitHub:</strong></p>
-                    <ul>
-                        <li><a href="https://github.com/user/mushroom-hunter" target="_blank">Основной репозиторий</a></li>
-                    </ul>
-                    <p><strong>Команда:</strong></p>
-                    <ul>
-                        <li>Михаил Орлов, геймдизайн</li>
-                        <li>Анна Власова, 3D-модели</li>
-                    </ul>
-                    <p><strong>Особенности:</strong></p>
-                    <ul>
-                        <li>Реалистичная физика сбора грибов</li>
-                        <li>Энциклопедия грибов в игре</li>
-                    </ul>
-                    <button onclick="hideTechInfo('tech-mushroom-hunter')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
                 </div>
             </div>
         </div>
