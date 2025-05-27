@@ -166,7 +166,46 @@
                     <button onclick="hideTechInfo('tech-mushroom-hunter')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
                 </div>
             </div>
-            
+
+            <!-- Виртуальный музей -->
+            <div class="card-wrapper" onclick="openModal('virtual-museum')">
+                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-virtual-museum')">i</button>
+                <div class="card">
+                    <h3>Виртуальный музей</h3>
+                    <p class="card-content">Виртуальный музей традиционной культуры коренных малочисленных народов Севера, Сибири и Дальнего Востока — цифровая платформа для сохранения и популяризации культурного наследия.</p>
+                    <img src="screenshot-script/public/virtual-museum.png" data-gif="screenshot-script/public/virtual-museum.gif" alt="Virtual Museum Screenshot" class="card-screenshot">
+                    <div class="btn-container">
+                        <a href="https://itvd.online/virtual_museum/" class="btn">Перейти</a>
+                    </div>
+                </div>
+                
+                <div id="tech-virtual-museum" class="tech-info-content">
+                    <h3>Техническая информация</h3>
+                    <p><strong>Стек:</strong></p>
+                    <ul>
+                        <li>backend: Laravel, MySQL</li>
+                        <li>frontend: React, Three.js</li>
+                    </ul>
+                    <p><strong>GitHub:</strong></p>
+                    <ul>
+                        <li><a href="https://github.com/user/virtual-museum" target="_blank">Основной репозиторий</a></li>
+                    </ul>
+                    <p><strong>Команда:</strong></p>
+                    <ul>
+                        <li>Дмитрий Соколов, 3D-графика</li>
+                        <li>Ольга Иванова, контент</li>
+                        <li>Алексей Петров, разработка</li>
+                    </ul>
+                    <p><strong>Особенности:</strong></p>
+                    <ul>
+                        <li>3D-тур по музею</li>
+                        <li>Интерактивные экспонаты</li>
+                        <li>Мультиязычная поддержка</li>
+                    </ul>
+                    <button onclick="hideTechInfo('tech-virtual-museum')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
+                </div>
+            </div>
+
             <!-- Herzen Tutor -->
             <div class="card-wrapper" onclick="openModal('herzen-tutor')">
                 <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-herzen-tutor')">i</button>
@@ -277,45 +316,6 @@
                         <li>Drag-and-drop интерфейс</li>
                     </ul>
                     <button onclick="hideTechInfo('tech-technopark-proj')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
-                </div>
-            </div>
-
-            <!-- Виртуальный музей -->
-            <div class="card-wrapper" onclick="openModal('virtual-museum')">
-                <button class="tech-info-btn" onclick="event.stopPropagation(); showTechInfo('tech-virtual-museum')">i</button>
-                <div class="card">
-                    <h3>Виртуальный музей</h3>
-                    <p class="card-content">Виртуальный музей традиционной культуры коренных малочисленных народов Севера, Сибири и Дальнего Востока — цифровая платформа для сохранения и популяризации культурного наследия.</p>
-                    <img src="screenshot-script/public/virtual-museum.png" data-gif="screenshot-script/public/virtual-museum.gif" alt="Virtual Museum Screenshot" class="card-screenshot">
-                    <div class="btn-container">
-                        <a href="https://itvd.online/virtual_museum/" class="btn">Перейти</a>
-                    </div>
-                </div>
-                
-                <div id="tech-virtual-museum" class="tech-info-content">
-                    <h3>Техническая информация</h3>
-                    <p><strong>Стек:</strong></p>
-                    <ul>
-                        <li>backend: Laravel, MySQL</li>
-                        <li>frontend: React, Three.js</li>
-                    </ul>
-                    <p><strong>GitHub:</strong></p>
-                    <ul>
-                        <li><a href="https://github.com/user/virtual-museum" target="_blank">Основной репозиторий</a></li>
-                    </ul>
-                    <p><strong>Команда:</strong></p>
-                    <ul>
-                        <li>Дмитрий Соколов, 3D-графика</li>
-                        <li>Ольга Иванова, контент</li>
-                        <li>Алексей Петров, разработка</li>
-                    </ul>
-                    <p><strong>Особенности:</strong></p>
-                    <ul>
-                        <li>3D-тур по музею</li>
-                        <li>Интерактивные экспонаты</li>
-                        <li>Мультиязычная поддержка</li>
-                    </ul>
-                    <button onclick="hideTechInfo('tech-virtual-museum')" style="margin-top: 15px; padding: 8px 16px; background: var(--color-3); color: white; border: none; border-radius: 4px; cursor: pointer;">Закрыть</button>
                 </div>
             </div>
 
